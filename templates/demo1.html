@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="/static/js/jquery/jquery.js"></script>
+    <link rel="stylesheet" href="/static/js/bootstrap/css/bootstrap.min.css">
+    <script src="/static/js/bootstrap/js/bootstrap.min.js"></script>
+    <style>
+        .map-node {
+            padding: 0px !important;
+            border: 1px !important;
+            border-style: dashed !important;
+            background-color: #cee4ce;
+            min-width: 20px;
+            max-width: 20px;
+            height: 40px;
+            import
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row" style="margin-top: 20px;">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="col-md-2">
+                    <button type="submit" class="btn btn-default glyphicon glyphicon-play" id="queryBtn">路径查询</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="panel panel-primary row">
+        <div class="panel-heading">
+            <h3 class="panel-title">图形</h3>
+        </div>
+        <div class="panel-body" id="info">
+            <table class="table">
+               <tbody id="map"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="/static/source/example1/main.js"></script>
+</body>
+</html>

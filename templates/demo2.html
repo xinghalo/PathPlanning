@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="/static/js/jquery/jquery.js"></script>
+    <link rel="stylesheet" href="/static/js/bootstrap/css/bootstrap.min.css">
+    <script src="/static/js/bootstrap/js/bootstrap.min.js"></script>
+    <style>
+        .map-node {
+            padding: 0px !important;
+            border: 1px !important;
+            border-style: dashed !important;
+            background-color: #cee4ce;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="panel panel-primary row" style="margin-top: 20px;">
+        <div class="panel-heading">
+            <h3 class="panel-title">生成地图</h3>
+        </div>
+        <div class="panel-body">
+            <div class="form-group col-md-4">
+                <input type="text" class="form-control" id="rows" value="50">
+            </div>
+            <div class="form-group col-md-4">
+                <input type="text" class="form-control" id="cols" value="50">
+            </div>
+            <div class="form-group col-md-4">
+                <button type="submit" class="btn btn-default glyphicon glyphicon-play" id="generateBtn">生成图形</button>
+            </div>
+            <div class="col-md-3">
+                <button type="submit" class="btn btn-default glyphicon glyphicon-play" id="selectStart">选择起点</button>
+                <span id="start_text"></span>
+            </div>
+            <div class="col-md-3">
+                <button type="submit" class="btn btn-default glyphicon glyphicon-play" id="selectGoal">选择终点</button>
+                <span id="goal_text"></span>
+            </div>
+            <div class="col-md-3">
+                <button type="submit" class="btn btn-default glyphicon glyphicon-play" id="selectWall">生成墙体</button>
+            </div>
+            <div class="col-md-3">
+                <button type="submit" class="btn btn-default glyphicon glyphicon-play" id="queryBtn">查询路径</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-primary row">
+        <div class="panel-heading">
+            <h3 class="panel-title">图形</h3>
+        </div>
+        <div class="panel-body" id="info">
+            <table class="table">
+               <tbody id="map"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="/static/source/example2/main.js"></script>
+</body>
+</html>
