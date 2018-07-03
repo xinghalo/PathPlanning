@@ -13,7 +13,7 @@ app = Flask(__name__)
 @app.route("/demo1")
 def hello():
     """
-    首页
+    最简单的例子
     :return:
     """
     return render_template('demo1.html')
@@ -21,7 +21,7 @@ def hello():
 @app.route("/demo2")
 def demo2():
     """
-    首页
+    自定义墙体
     :return:
     """
     return render_template('demo2.html')
