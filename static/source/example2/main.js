@@ -65,14 +65,14 @@ $(document).ready(function(){
     var target = $(event.target);
     if(target.prop("nodeName")=="TD"){
         if(is_select_start){
-            start = target.index()+","+target.parent().index();
+            start = target.parent().index() +","+ target.index();
             target.css("background-color","red");
             is_select_start = false;
             $('td').css('cursor','Default');
             $('#start_text').html("("+start+")");
         }
         if(is_select_goal){
-            goal = target.index()+","+target.parent().index();
+            goal = target.parent().index() +","+ target.index();
             target.css("background-color","yellow");
             is_select_goal = false;
             $('td').css('cursor','Default');
